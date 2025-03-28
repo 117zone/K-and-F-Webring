@@ -87,14 +87,19 @@ nav a:visited {
 }
 
 /*------------------------------member li-----------------------------*/
-.mem{
+.mem li {
     margin-bottom: 10px;
     background: #112040;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 10px;
-    list-style-type: none;
+ 
 }
+
+.mem ul {
+    padding-left: 10px;
+      list-style-type: none;
+}
+
 
 /*-------------------------headers------------------*/
 h1,
