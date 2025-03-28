@@ -5,5 +5,5 @@ layout: html
 <h1 id=members>Members ({{site.data.members.size}})</h2>
 <ul style="mem">
 {% for member in site.data.members %}
-<li><a href="{{member.url | xml_escape}}"><img src="{{member.button | xml_escape}}">{{member.name | xml_escape | newline_to_br}}</a><img src="{{member.dove | xml_escape}}"><br> {{member.description | xml_escape}} {% endfor %}
+<li style="mem"><a href="{{member.url | xml_escape}}"><img src="{{member.button | xml_escape}}"> {{member.name | xml_escape | newline_to_br}} </a> <img src="{{member.dove | xml_escape}}"><br> {{member.description | xml_escape}} {% endfor %}
 </ul>
