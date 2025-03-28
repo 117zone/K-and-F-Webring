@@ -6,6 +6,6 @@ layout: html
 <div style="mem>
 <ul>
 {% for member in site.data.members %}
-<li><a href="{{member.url | xml_escape}}"><img src="{{member.button | xml_escape}}"></a> <img src="{{member.dove | xml_escape}}"> <br> <a href="{{member.url | xml_escape}}">{{member.name | xml_escape | newline_to_br}}</a><br>{{member.description | xml_escape}} {% endfor %}
+<li><a href="{{member.url | xml_escape}}"><img src="{{member.button | xml_escape}}"></a> <img src="{{member.dove | xml_escape}}"> <br> <a href="{{member.url | xml_escape}}">{{member.name | xml_escape | newline_to_br}}</a> slug: {{member.slug | xml_escape}}<br>{{member.description | xml_escape}} {% endfor %}
 </ul>
 </div>
