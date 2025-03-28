@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=verdana');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /*------------------------main stuff-----------------------*/
-          
-            body {
-                font-family: Calibri, Arial, sans-serif;
-  font-size: 17px;
-  color: #8DBDCC;
-              background-color: #121212;
+
+body {
+    height: 100%;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 17px;
+    color: #8DBDCC;
+    background-color: #121212;
                 background-image: url('/kafw_bg.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
+background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
 
 #container {
 
     margin: 100px auto 0px;
-  
+
     width: 900px;
     background: #130f21;
     border: #bbec20 solid 1px;
@@ -27,46 +29,47 @@
     gap: 0px 0px;
     grid-template-areas:
         "nav main";
-}  
+}
 
-main{
-  
+main {
+
     overflow-y: auto;
-padding:5px;
+    padding: 5px;
 
 }
- nav{
-   background: linear-gradient(#1e262f 10%, #1e262f80 20%, transparent 90%) ;
-  
 
- }    
+nav {
+    background: linear-gradient(#1e262f 10%, #1e262f80 20%, transparent 90%);
+
+
+}
 
 iframe {
-	border: none;
-	height: 100%;
-	width: 100%;
+    border: none;
+    height: 100%;
+    width: 100%;
 }
 
 
 /*------------------------nav-----------------------*/
 
-nav li{
-  margin-bottom: 5px;
-  background: #112040; 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
+nav li {
+    margin-bottom: 5px;
+    background: #112040;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-nav ul{
-   margin-left: -25px;
+nav ul {
+    margin-left: -25px;
     padding-left: 5px;
     margin-top: 50px;
     list-style-type: none;
 }
 
 
-nav li a{
+nav li a {
     font-family: 'Saira Condensed', sans-serif;
     color: #bbec20;
     text-decoration: none;
@@ -74,71 +77,78 @@ nav li a{
 
 }
 
-nav a:hover{
+nav a:hover {
     letter-spacing: 2px;
- 
+
 }
-nav a:visited{
+
+nav a:visited {
     color: none;
 }
 
 
 /*-------------------------headers------------------*/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
-    
+
     line-height: initial;
     letter-spacing: 0.5px;
-    
-	
-    
+
+
+
 }
+
 h1 {
     color: #bbec20;
     font-size: 26px;
     border-bottom: 1px solid #B5387C;
 }
+
 h2 {
     color: #D8994C;
     font-size: 24px;
     border-bottom: 1px solid #B5387C;
 }
+
 h3 {
     color: #D96159;
 }
 
 /*------------------------main links ---------------------------------------------------------*/
-main a{
+main a {
     font-family: 'Saira Condensed', sans-serif;
-    color: #fefeff;
+    color: #d0c052;
     letter-spacing: 0.5px;
     transition: all ease-in-out 0.5s;
-    text-decoration: none;
-    font-size: 25px;
-    text-shadow: 1px 1px #ff00ff99, -1px -1px #00ffff99, 0px 0px 10px #000 ;
+    text-decoration: underline #bbec20;
+    font-size: 18px;
+
 }
 
 
-main a:hover{
-    letter-spacing: 2px;
- 
+main a:hover {
+    letter-spacing: 1px;
+
 }
-main a:visited{
+
+main a:visited {
     color: #fefeff;
 }
 
 /*image make small*/
 .smallen {
-  width: 150px;
-margin: 5px;
-  
+    width: 150px;
+    margin: 5px;
+
 }
 
-            
-    /*-----------------------------mobile screens--------------------------------------------------------*/
+
+/*-----------------------------mobile screens--------------------------------------------------------*/
 @media(max-width:685px) {
 
     #container {
