@@ -43,7 +43,7 @@ layout: html
   <h2>Join</h2>
 <p>Fill out the form below and send me an email at contact@117.zone, with the word "webring" somewhere in the subject. </p>
 
-<details>
+
 <form name=signup method=POST data-netlify=true netlify-honeypot=bot>
 <div hidden><label>Leave this blank unless you're spam <input name=bot></label></div>
 <label>Slug <input name=slug pattern=[0-9a-z](?:-?[0-9a-z])* required></label>
@@ -55,9 +55,9 @@ layout: html
 <label>E-mail address: <input type=email name=email required></label><br>You'll receive an e-mail when your addition/change is made.<br>
 <input type=submit>
 </form>
-</details>
+
 
 <h2>Add links on your webpage</h2>
-<p>Once you're on the members list, add links on your webpage to <b>{{'/YOUR-SLUG/next'|absolute_url}}</b> and <b>{{'/YOUR-SLUG/previous'|absolute_url}}</b>, replacing <b>YOUR-SLUG</b> with the slug you chose.<br>
-Feel free to include a link to <b>{{'/'|absolute_url}}</b> as well.<br>
-Check if <a href=https://html.spec.whatwg.org/dev/sections.html#the-aside-element>the <code>&lt;aside&gt;</code> element</a> is right for you.
+<p>Add this code to your website, and swap in your slug where it says 'YOUR-SLUG'! You could also make your own, as long as the links are all intact.
+<a href="https://kink-and-fetish-webring.netlify.app/kfw/previous">⮜</a><a href="https://kink-and-fetish-webring.netlify.app/"><img src="/kafw_logo.png"></a> <a href="https://kink-and-fetish-webring.netlify.app/kfw/next">⮞</a>
+<textarea><a href="https://kink-and-fetish-webring.netlify.app/YOUR-SLUG/previous">⮜</a><a href="https://kink-and-fetish-webring.netlify.app/"><img src=""></a> <a href="https://kink-and-fetish-webring.netlify.app/YOUR-SLUG/next">⮞</a></textarea>
