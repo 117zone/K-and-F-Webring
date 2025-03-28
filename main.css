@@ -86,7 +86,15 @@ nav a:visited {
     color: #B5387C;
 }
 
-
+/*------------------------------member li-----------------------------*/
+.mem{
+    margin-bottom: 10px;
+    background: #112040;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style-type: none;
+}
 
 /*-------------------------headers------------------*/
 h1,
