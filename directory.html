@@ -1,0 +1,31 @@
+---
+title: DIRECTORY | KINK & FETISH WEBRING
+layout: html
+---
+<h1>The Directory</h1>
+<p>
+This is the link directory for people who do not have a site or the ability to add a snippet of code to a site. If that sounds like you, you may join the
+        directory instead of being looped into the ring. Though if you would like to be listed in the directory, I ask
+        that you consider if you are someone who needs the eyes on your work, if you don't have a site, I would
+        prefer you are someone who isn't just a cishet white person making vanilla stuff. I hope you can understand! If
+        you do chose to make a site later on though, everyone is welcome to be in the ring.
+  </p>
+<h2>Join</h2>
+<p>All rules apply from the regular<a href="https://kink-and-fetish-webring.netlify.app/join"> member rules</a>, aside from the one that says you need a site, lol.</p>
+<p>If you would like to join this directory, please email me at contact@117.zone with the following info filled out, and "directory" somewhere in your subject line!</p>
+<p><textarea rows="7" cols="70">
+Name: <br>
+URL: <br>
+Description: <br>
+Dead Dove? <br>
+
+ and a 100x100 image <br>
+</textarea></p>
+<h2 id=members>({{site.data.directory.size}}) Links </h2>
+<div class="mem">
+<ul>
+{% for direct in site.data.directory %}
+<li><a href="{{direct.url | xml_escape}}"><img src="{{direct.icon | xml_escape}}"></a> <img src="{{direct.dove | xml_escape}}"> <br> <a href="{{direct.url | xml_escape}}">{{direct.name | xml_escape | newline_to_br}}</a><br>
+  {{direct.description | xml_escape}} {% endfor %}
+</ul>
+</div>
